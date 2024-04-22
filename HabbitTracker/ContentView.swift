@@ -8,14 +8,15 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var tracker = Tracker(activities: [
+        Activity(title: "Meditation", description: "Meditate for 10 minutes"),
+        Activity(title: "Drink water", description: "Drink a glass of the water")
+    ])
+
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationStack {
+            ActivityListView(tracker: tracker)
         }
-        .padding()
     }
 }
 
