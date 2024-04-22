@@ -15,6 +15,7 @@
 		E1F76FCE2BD6B21700EBCD77 /* Tracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F76FCD2BD6B21700EBCD77 /* Tracker.swift */; };
 		E1F76FD02BD6B29400EBCD77 /* ActivityListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F76FCF2BD6B29400EBCD77 /* ActivityListView.swift */; };
 		E1F76FD22BD6B2A800EBCD77 /* ActivityDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F76FD12BD6B2A800EBCD77 /* ActivityDetailsView.swift */; };
+		E1F76FD42BD6CC8000EBCD77 /* NewActivityFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F76FD32BD6CC8000EBCD77 /* NewActivityFormView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		E1F76FCD2BD6B21700EBCD77 /* Tracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tracker.swift; sourceTree = "<group>"; };
 		E1F76FCF2BD6B29400EBCD77 /* ActivityListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityListView.swift; sourceTree = "<group>"; };
 		E1F76FD12BD6B2A800EBCD77 /* ActivityDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityDetailsView.swift; sourceTree = "<group>"; };
+		E1F76FD32BD6CC8000EBCD77 /* NewActivityFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewActivityFormView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				E1F76FBF2BD6B0B600EBCD77 /* ContentView.swift */,
 				E1F76FCF2BD6B29400EBCD77 /* ActivityListView.swift */,
 				E1F76FD12BD6B2A800EBCD77 /* ActivityDetailsView.swift */,
+				E1F76FD32BD6CC8000EBCD77 /* NewActivityFormView.swift */,
 				E1F76FCB2BD6B14700EBCD77 /* Activity.swift */,
 				E1F76FCD2BD6B21700EBCD77 /* Tracker.swift */,
 				E1F76FC12BD6B0B700EBCD77 /* Assets.xcassets */,
@@ -151,6 +154,7 @@
 			files = (
 				E1F76FCE2BD6B21700EBCD77 /* Tracker.swift in Sources */,
 				E1F76FD02BD6B29400EBCD77 /* ActivityListView.swift in Sources */,
+				E1F76FD42BD6CC8000EBCD77 /* NewActivityFormView.swift in Sources */,
 				E1F76FCC2BD6B14700EBCD77 /* Activity.swift in Sources */,
 				E1F76FC02BD6B0B600EBCD77 /* ContentView.swift in Sources */,
 				E1F76FD22BD6B2A800EBCD77 /* ActivityDetailsView.swift in Sources */,

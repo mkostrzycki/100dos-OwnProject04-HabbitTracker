@@ -13,9 +13,21 @@ struct ContentView: View {
         Activity(title: "Drink water", description: "Drink a glass of the water")
     ])
 
+    @State private var showAddForm = false
+
     var body: some View {
         NavigationStack {
-            ActivityListView(tracker: tracker)
+            VStack {
+                ActivityListView(tracker: tracker)
+            }
+            .toolbar {
+                Button("Add new activity", systemImage: "plus") {
+                    showAddForm = true
+                }
+            }
+        }
+        .sheet(isPresented: $showAddForm) {
+            NewActivityFormView(tracker: tracker)
         }
     }
 }
