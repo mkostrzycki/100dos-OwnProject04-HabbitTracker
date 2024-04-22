@@ -8,10 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var tracker = Tracker(activities: [
-        Activity(title: "Meditation", description: "Meditate for 10 minutes"),
-        Activity(title: "Drink water", description: "Drink a glass of the water")
-    ])
+    @State private var tracker = Tracker()
 
     @State private var showAddForm = false
 

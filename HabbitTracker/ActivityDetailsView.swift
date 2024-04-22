@@ -31,10 +31,10 @@ struct ActivityDetailsView: View {
 }
 
 #Preview {
-    let activityA = Activity(title: "Meditation", description: "Meditate for 10 minutes", completionCount: 0)
+    let tracker = Tracker()
+    let activity = Activity(title: "AAA", description: "AAA")
+    tracker.activities.append(activity)
+    tracker.activities.append(Activity(title: "BBB", description: "BBB"))
 
-    return ActivityDetailsView(tracker: Tracker(activities: [
-        activityA,
-        Activity(title: "Drink water", description: "Drink a glass of the water", completionCount: 0)
-    ]), activity: activityA)
+    return ActivityDetailsView(tracker: tracker, activity: activity)
 }

@@ -39,10 +39,9 @@ struct ActivityListView: View {
 }
 
 #Preview {
-    ActivityListView(tracker:
-        Tracker(activities: [
-            Activity(title: "Meditation", description: "Meditate for 10 minutes"),
-            Activity(title: "Drink water", description: "Drink a glass of the water")
-        ])
-    )
+    let tracker = Tracker()
+    tracker.activities.append(Activity(title: "AAA", description: "AAA"))
+    tracker.activities.append(Activity(title: "BBB", description: "BBB"))
+
+    return ActivityListView(tracker: tracker)
 }

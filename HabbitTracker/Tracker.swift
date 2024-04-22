@@ -9,17 +9,23 @@ import Foundation
 
 @Observable
 class Tracker {
-    var activities = [Activity]()
-
-    init(activities: [Activity] = [Activity]()) {
-        self.activities = activities
+    var activities = [Activity]() {
+        didSet {
+            if let encoded = try? JSONEncoder().encode(activities) {
+                UserDefaults.standard.set(encoded, forKey: "Activities")
+            }
+        }
     }
 
-    func add(_ activity: Activity) {
-        self.activities.append(activity)
-    }
+    init() {
+        if let savedActivities = UserDefaults.standard.data(forKey: "Activities") {
+            if let decodedActivities = try? JSONDecoder().decode([Activity].self, from: savedActivities) {
+                self.activities = decodedActivities
 
-    func removeBy(index: Int) {
-        self.activities.remove(at: index)
+                return
+            }
+        }
+
+        self.activities = [Activity]()
     }
 }

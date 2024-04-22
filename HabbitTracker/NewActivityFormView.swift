@@ -43,10 +43,9 @@ struct NewActivityFormView: View {
 }
 
 #Preview {
-    NewActivityFormView(
-        tracker: Tracker(activities: [
-                    Activity(title: "Meditation", description: "Meditate for 10 minutes"),
-                    Activity(title: "Drink water", description: "Drink a glass of the water")
-                ])
-            )
+    let tracker = Tracker()
+    tracker.activities.append(Activity(title: "AAA", description: "AAA"))
+    tracker.activities.append(Activity(title: "BBB", description: "BBB"))
+
+    return NewActivityFormView(tracker: tracker)
 }
